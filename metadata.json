@@ -1,0 +1,4 @@
+{
+  "name": "AI Image Editor",
+  "description": "Upload an image and use text prompts to edit it with Gemini. Add filters, remove objects, or completely transform your pictures."
+}
