@@ -7,7 +7,71 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Geist', 'system-ui', 'sans-serif'],
+            },
+            colors: {
+              gray: {
+                950: '#0a0a0b',
+                900: '#18181b',
+                800: '#27272a',
+                700: '#3f3f46',
+                600: '#52525b',
+                500: '#71717a',
+                400: '#a1a1aa',
+                300: '#d4d4d8',
+                200: '#e4e4e7',
+                100: '#f4f4f5',
+                50: '#fafafa',
+              },
+              teal: {
+                DEFAULT: '#00baa7',
+                50: '#e6faf8',
+                100: '#b3f0eb',
+                200: '#80e6dd',
+                300: '#4ddccf',
+                400: '#1ad2c2',
+                500: '#00baa7',
+                600: '#009585',
+                700: '#007064',
+                800: '#004a42',
+                900: '#002521',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      * {
+        transition-property: color, background-color, border-color, opacity, box-shadow, transform;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms;
+      }
+      ::selection {
+        background-color: rgba(0, 186, 167, 0.3);
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #18181b;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #3f3f46;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #52525b;
+      }
+    </style>
   <script type="importmap">
 {
   "imports": {
@@ -19,9 +83,8 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
 </head>
-  <body class="bg-[#0B192E] antialiased">
+  <body class="bg-gray-950 antialiased font-sans">
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
   </body>

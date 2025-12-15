@@ -9,8 +9,14 @@ AI-powered image editing application using Google Gemini's image generation capa
 - **Frontend**: React 19 with TypeScript
 - **Build Tool**: Vite 6
 - **AI**: Google Gemini API (`@google/genai`) - Model: `gemini-2.5-flash-image`
-- **Styling**: Tailwind CSS (inline classes)
+- **Styling**: Tailwind CSS (inline classes) with Geist font
 - **Export**: JSZip for batch image downloads
+
+## Design System
+
+- **Colors**: Teal (#00baa7) accent on dark gray (#0a0a0b) background
+- **Font**: Geist (Google Fonts)
+- **Style**: Inspired by c15t.com - modern, clean, minimal
 
 ## Project Structure
 
@@ -18,7 +24,8 @@ AI-powered image editing application using Google Gemini's image generation capa
 ai-image-editor/
 ├── App.tsx              # Main React component with all UI logic
 ├── index.tsx            # React entry point
-├── index.html           # HTML template
+├── index.html           # HTML template with Tailwind config
+├── logo.svg             # Application logo (teal sparkle)
 ├── types.ts             # TypeScript interfaces (ImageFile, HistoryItem)
 ├── services/
 │   └── geminiService.ts # Gemini API integration
@@ -29,11 +36,13 @@ ai-image-editor/
 
 ## Key Components (App.tsx)
 
+- `Logo` - SVG sparkle logo with teal gradient and glow effect
 - `ImageUploadArea` - Drag & drop / click to upload initial image
 - `InspirationUpload` - Optional reference image for style transfer
 - `ImageHistoryList` - Version history with selection checkboxes
 - `Accordion` - Collapsible UI sections
-- `LoadingSpinner` - Generation progress indicator
+- `LoadingSpinner` - Generation progress indicator with sparkle icon
+- Icon components: `UploadIcon`, `SparkleIcon`, `PlusIcon`, `ChevronIcon`, `RefreshIcon`, `DownloadIcon`, `CloseIcon`
 
 ## Core Features
 
@@ -75,3 +84,5 @@ Interface is in French (prompts, labels, error messages).
 - State managed with React hooks (useState, useCallback, useMemo)
 - No external state management library
 - Images stored as base64 in memory (no persistence)
+- Custom SVG icons inline in components
+- Tailwind config defined in index.html script tag

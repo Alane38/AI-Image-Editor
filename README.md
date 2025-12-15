@@ -1,6 +1,21 @@
-# AI Image Editor
+<p align="center">
+  <img src="logo.svg" alt="AI Image Editor" width="128" height="128">
+</p>
 
-A modern web application for AI-powered image editing using Google Gemini. Transform your images with natural language prompts.
+<h1 align="center">AI Image Editor</h1>
+
+<p align="center">
+  A modern web application for AI-powered image editing using Google Gemini.<br>
+  Transform your images with natural language prompts.
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/React-19-00baa7?style=flat-square&logo=react" alt="React 19">
+  <img src="https://img.shields.io/badge/TypeScript-5.8-00baa7?style=flat-square&logo=typescript" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Gemini-AI-00baa7?style=flat-square&logo=google" alt="Gemini AI">
+</p>
+
+---
 
 ## Features
 
@@ -9,7 +24,7 @@ A modern web application for AI-powered image editing using Google Gemini. Trans
 - **Version History** - Track all your edits with full history navigation
 - **Batch Export** - Select and download multiple images as a ZIP archive
 - **Drag & Drop** - Intuitive file upload with drag and drop support
-- **Modern UI** - Clean, responsive interface with dark theme
+- **Modern UI** - Clean, responsive dark interface with teal accents
 
 ## Demo
 
@@ -30,8 +45,8 @@ Upload an image and try prompts like:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/ai-image-editor.git
-cd ai-image-editor
+git clone https://github.com/Alane38/AI-Image-Editor.git
+cd AI-Image-Editor
 ```
 
 2. Install dependencies:
@@ -74,6 +89,7 @@ npm run dev
 ├── App.tsx              # Main application component
 ├── index.tsx            # React entry point
 ├── types.ts             # TypeScript type definitions
+├── logo.svg             # Application logo
 ├── services/
 │   └── geminiService.ts # Gemini API integration
 ├── vite.config.ts       # Vite configuration
@@ -106,4 +122,4 @@ This project is open source and available under the [MIT License](LICENSE).
 ## Acknowledgments
 
 - Built with [Google AI Studio](https://aistudio.google.com/)
-- UI inspired by modern design systems
+- Design inspired by [c15t.com](https://c15t.com/)
